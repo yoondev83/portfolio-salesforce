@@ -1,0 +1,102 @@
+<!--
+ - Created by yoonsukchang on 9/17/22.
+ -->
+
+<!-- AboutMeContent -->
+<template>
+    <lightning-card  variant="Narrow">
+        <h3 slot="title" class="slds-text-heading_medium">
+            <lightning-icon icon-name="standard:contact" size="medium" class="header-titleIcon"></lightning-icon>
+            Contact
+        </h3>
+        <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions" size="large"></lightning-button-icon>
+        <div class="c-container">
+            <lightning-layout class="desktop">
+                <lightning-layout-item size="2" small-device-size="2" medium-device-size="2" padding="around-small">
+                    <div class="header-column">
+                        <p class="field-title" title="Name">Name</p>
+                        <p class="field-value">Yoonsuk Chang</p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="2" small-device-size="2" medium-device-size="2" padding="around-small">
+                    <div class="header-column">
+                        <p class="field-title" title="Title">Title</p>
+                        <p class="field-value">Developer</p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="2" small-device-size="2" medium-device-size="2" padding="around-small">
+                    <div class="header-column">
+                        <p class="field-title" title="Email">Email</p>
+                        <lightning-button variant="base" label="Copy" title="yoondev83@gmail.com" onclick={handleClick} class="slds-m-left_x-small emailBtn"></lightning-button>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="2" small-device-size="2" medium-device-size="2" padding="around-small">
+                    <div class="header-column">
+                        <p class="field-title" title="LinkedIn">LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/yoonsuk-chang-ma-577b64125/">Click</a>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="2" small-device-size="2" medium-device-size="2" padding="around-small">
+                    <div class="header-column">
+                        <p class="field-title" title="Trailhead">Trailhead</p>
+                        <a href="https://trailblazer.me/id/yoondev83">Click</a>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout class="layout-container mobile">
+                    <div class="mobile-header-container">
+                        <div class="header-column">
+                            <p class="field-title" title="Name">Name</p>
+                            <p class="field-value">Yoonsuk Chang</p>
+                        </div>
+                        <div class="header-column">
+                            <p class="field-title" title="Title">Title</p>
+                            <p class="field-value">Developer</p>
+                        </div>
+                        <div class="header-column">
+                            <p class="field-title" title="Email">Email</p>
+                            <lightning-button variant="base" label="Copy" title="yoondev83@gmail.com" onclick={handleClick} class="slds-m-left_x-small emailBtn"></lightning-button>
+                        </div>
+                        <div class="header-column">
+                            <p class="field-title" title="LinkedIn">LinkedIn</p>
+                            <a href="https://www.linkedin.com/in/yoonsuk-chang-ma-577b64125/">Click</a>
+                        </div>
+                        <div class="header-column">
+                            <p class="field-title" title="Trailhead">Trailhead</p>
+                            <a href="https://trailblazer.me/id/yoondev83">Click</a>
+                        </div>
+                    </div>
+            </lightning-layout>
+        </div>
+    </lightning-card>
+    <lightning-tabset variant="scoped" class="tabset">
+        <lightning-tab label="DETAILS" class="detailTab">
+            <div>
+                <p class="slds-p-horizontal_small slds-m-around_medium content-text">
+                    {aboutMeData.description_header}
+                </p>
+                <p class="slds-p-horizontal_small slds-m-around_medium content-text">
+                    {aboutMeData.description_work}
+                </p>
+                <p class="slds-p-horizontal_small slds-m-around_medium content-text">
+                    {aboutMeData.description_me}
+                </p>
+                <p class="slds-p-horizontal_small slds-m-around_medium content-text">
+                    {aboutMeData.description_me_second}
+                </p>
+                <p class="slds-p-horizontal_small slds-m-around_medium content-text">
+                    {aboutMeData.description_last}
+                </p>
+                <p class="slds-p-horizontal_small slds-m-around_medium skill-title">
+                    SKILLS
+                </p>
+                <p class="slds-p-horizontal_small slds-m-around_medium badge-p badge-container">
+                    <c-skill-badges ></c-skill-badges>
+                </p>
+            </div>
+        </lightning-tab>
+    </lightning-tabset>
+    <footer>
+        <p>Copyright © Yoonsuk Chang</p>
+    </footer>
+</template>

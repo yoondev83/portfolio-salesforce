@@ -1,0 +1,51 @@
+/**
+ * Created by yoonsukchang on 9/16/22.
+ */
+@import 'c/staticCss';
+footer{
+    color: #6f6f6f;
+    text-align: center;
+    padding-top: 3%;
+}
+.header{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerIcon{
+    zoom: 200%;
+    --lwc-colorTextIconDefault: #212529;
+}
+.header-name{
+    font-size: 1.5rem;
+    font-family: 'Montserrat-SemiBold', 'Times New Roman', sans-serif;
+    font-weight: 600 !important;
+}
+.header-name a:hover img{
+    transform: translate(0, -20%);
+    transition: all 0.35s ease;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+.msgContainer{
+    min-height: 1.9rem;
+}
+.movingMsg {
+    display: table-cell;
+    vertical-align: middle;
+    border-right: 0.05em solid black;
+    animation: cursor 0.1s ease infinite;
+    text-align: center;
+    color: #a39777;
+    font-size: 1.3rem;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}

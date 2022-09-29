@@ -1,0 +1,22 @@
+/**
+ * Created by yoonsukchang on 9/17/22.
+ */
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('/sfsites/c/resource/Montserrat/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('/sfsites/c/resource/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, p, span {
+    font-family: 'Montserrat-Regular', 'Times New Roman', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: center;
+    color: #38343b;
+}

@@ -1,0 +1,135 @@
+/**
+ * Created by yoonsukchang on 9/17/22.
+ */
+@import "c/staticCss";
+footer{
+    text-align: center;
+    display: none;
+    color: #6f6f6f;
+    padding-top: 3%;
+}
+
+.header-column a:link,
+.header-column a:visited{
+    font-family: 'Montserrat-Regular', 'Times New Roman', sans-serif;
+    color: #222222;
+    font-size: 1.2rem;
+}
+.header-column a:hover{
+    transform: translate(0, -20%);
+    transition: all 0.35s ease;
+    color: #4d92eb;
+}
+
+.c-container {
+    margin: 0 0 5px 0;
+}
+.detailTab{
+    text-overflow: ellipsis;
+    overflow: scroll;
+    height: 50vh;
+}
+.detailTab p{
+    font-size: 1.1rem;
+    line-height: 1.45;
+    color: #222222;
+}
+.header-column {
+    padding: 0 2rem;
+}
+.header-column p{
+    font-size: 1.2rem;
+}
+.header-titleIcon{
+    margin-right: 5px;
+}
+.field-title {
+    font-family: 'Montserrat-SemiBold', 'Times New Roman', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.25;
+    color: #54698d;
+    margin-bottom: .25rem;
+}
+.field-value{
+    color: #222222;
+}
+.content-text{
+    font-size: 1.1rem;
+}
+.emailBtn{
+    margin-left: 0;
+    --sds-c-button-text-color: #222222;
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Regular', 'Times New Roman', sans-serif;
+}
+.emailBtn:hover{
+    text-decoration: underline;
+    transform: translate(0, -20%);
+    transition: all 0.35s ease;
+    color: #4d92eb;
+}
+
+.skill-title{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.badge-p{
+    margin-top: 0.8rem;
+}
+.mobile{
+    display: none;
+}
+@media (min-width: 1200px) {
+    .detailTab {
+        height: 55vh;
+    }
+}
+ /*Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    .detailTab {
+        height: 52vh;
+    }
+}
+@media (max-width: 480px) {
+    .badge-container{
+        margin: auto 0;
+    }
+    .content-text{
+        padding: 0;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        height: 25vh;
+    }
+    .detailTab {
+        padding: 0;
+        text-align: left;
+        height: 100%;
+    }
+    .header-column{
+        height: 3rem;
+    }
+    .layout-container{
+        display: flow-root;
+    }
+    .skill-title{
+        text-align: center;
+    }
+    .mobile-header-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        row-gap: 10%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    footer{
+        display: block;
+    }
+}

@@ -1,0 +1,88 @@
+/**
+ * Created by yoonsukchang on 9/17/22.
+ */
+
+@font-face {
+    font-family: 'danielFont';
+    src: url('/sfsites/c/resource/ASSETTS/danielbd.ttf');
+}
+.image-container{
+    text-align: center;
+    height: 100%;
+}
+.myName {
+    font-family: 'danielFont';
+    font-size: 1.8rem;
+}
+.polaroid{
+    text-align: center;
+}
+.polaroid span {
+    background: #ffffff;
+    cursor: auto;
+    display: inline-grid;
+    grid-template-rows: 90% 10%;
+    margin: 0;
+/*margin: 55px 75px 30px;*/
+padding: 15px 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    z-index: 0;
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    align-items: self-end;
+}
+.polaroid img {
+    width: 100%;
+    height: 100%;
+}
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 768px) {
+    .myName {
+        font-size: 1.5rem;
+        transform: translateY(10%);
+    }
+    .polaroid{
+        text-align: center;
+    }
+    .polaroid span{
+        width: 100%;
+        height: 60vh;
+    }
+    .polaroid img{
+        width:100%;
+        max-width:640px
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/*@media only screen and (max-width: 992px) {*/
+/*    .polaroid img {*/
+/*        max-width: 220px;*/
+/*    }*/
+/*}*/
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (max-width: 768px) {*/
+/*    .polaroid img {*/
+/*        max-width: 400px;*/
+/*    }*/
+/*}*/
+/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
+/*@media only screen and (max-width: 600px) {*/
+/*    .polaroid img {*/
+/*        max-width: 250px;*/
+/*    }*/
+/*}*/
+/*!* Extra small devices (phones, 600px and down) *!*/
+/*@media only screen and (max-width: 480px) {*/
+/*    .polaroid img {*/
+/*        max-width: 120px;*/
+/*    }*/
+/*}*/

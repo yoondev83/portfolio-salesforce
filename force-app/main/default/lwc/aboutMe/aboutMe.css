@@ -1,0 +1,44 @@
+/**
+ * Created by yoonsukchang on 9/17/22.
+ */
+footer{
+    color: #6f6f6f;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.c-container {
+    height: 85vh;
+    margin: 10px 0 0 0;
+}
+.page-section {
+    padding: 1rem;
+}
+.page-header,
+.page-footer {
+    height: 50px;
+}
+.page-main {
+    background: #f8f8f8;
+    height: 80vh;
+}
+.page-left,
+.page-right {
+    background: #f0efef;
+}
+
+@media (max-width: 480px) {
+    footer{
+        display: none;
+    }
+    .content-container{
+        transform: translateX(-5%);
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 110%;
+    }
+
+    .page-main {
+        height: 100%;
+    }
+}

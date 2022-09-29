@@ -1,0 +1,42 @@
+/**
+ * Created by yoonsukchang on 9/19/22.
+ */
+footer{
+    color: #6f6f6f;
+    text-align: center;
+    padding-top: 3%;
+}
+.field-title{
+    font-family: 'Montserrat-SemiBold', 'Times New Roman', sans-serif;
+    color: #212529;
+    font-size: 1.1rem;
+
+}
+
+.item-title{
+    font-family: 'Montserrat-SemiBold', 'Times New Roman', sans-serif;
+    font-size: 1.4rem;
+    color: #212529;
+}
+.timeline-container{
+    font-family: 'Montserrat-Regular', 'Times New Roman', sans-serif;
+    font-size: 1.4rem;
+    color: #212529;
+}
+
+/*!* Extra small devices (phones, 600px and down) *!*/
+@media (max-width: 480px) {
+    .field-date{
+        white-space: normal;
+    }
+    .timeline-container{
+        padding-left: 0px;
+        transform: translateX(-3%);
+    }
+    .timeline-article{
+        width: 110%;
+    }
+    .timeline-itemTitle{
+        max-width: 110%;
+    }
+}

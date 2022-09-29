@@ -1,0 +1,22 @@
+/**
+ * Created by yoonsukchang on 9/20/22.
+ */
+
+.badge{
+    font-size: 1rem;
+}
+.mobile-badge{
+    display: none;
+}
+@media (max-width: 480px) {
+    .badge-item{
+        width: 50%;
+    }
+    .desktop-tablet-badge{
+        display: none;
+    }
+    .mobile-badge{
+        display: flex;
+        margin: auto 0;
+    }
+}
