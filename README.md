@@ -1,18 +1,16 @@
-# Salesforce DX Project: Next Steps
+# How do I install?
+git clone and push it to your org. You will see my components on the community page builder.
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## I just want to get LWC components.
+Please check the folder force-app\main\default\lwc
+You can simply download files and then put them into your project directory.
 
-## How Do You Plan to Deploy Your Changes?
-
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## Images and fonts do not load.
+Images and fonts that I used for this portfolio are uploaded in Static Resources on Setup.
+When you add your own fonts, make sure to use this code:
+'' @font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('/sfsites/c/resource/Montserrat/Montserrat-Regular.ttf');
+}
+''
+When you add or change images, you can load the images just like the font url above or use LWC JavaScript.
