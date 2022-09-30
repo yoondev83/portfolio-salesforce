@@ -1,3 +1,6 @@
+# Demo
+https://yoondev-dev-ed.develop.my.site.com/s/
+
 # How do I install?
 git clone and push it to your org. You will see my components on the community page builder.
 And add the CSS code below into the community page builder theme CSS (Theme -> the down arrow -> edit css).
